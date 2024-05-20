@@ -75,19 +75,7 @@ body {
   font-family: 'Platypi', sans-serif;
   padding-bottom: 30px;
 }
-.hero .info-content .btn {
-  font-size: 1em;
-  color:#fff;
-  background: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  border:1px solid #1d5ce4;
-  margin-top: 10px;
-}
-.hero .info-content .btn:hover {
-  background-color: #d41434;
-  color:#181818;
-}
+
 .radio-section {
   display: grid;
   height: 80px;
@@ -130,7 +118,7 @@ body {
 @media only screen and (max-width: 600px)  {
   
   .navbar {
-    background-color: #1d5ce4;
+    background-color: #d41434;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     align-items: center;
@@ -172,7 +160,7 @@ body {
     height: 70vh;
     display: grid;
     align-items: center;
-    background-color: #1d5ce4;
+    background-color: #d41434;
     transform: translateX(170%);
     transition: all 1s;
     margin-top: 34em;
