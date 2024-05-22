@@ -40,53 +40,7 @@ h3{
     text-align: center;
 }
 
-.container{
-    width: 1920px;
-}
 
-.navbar {
-    background-color: #d41434;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    align-items: center;
-    font-size: 40px;
-}
-
-.navbar .logo {
-    height: 60px;
-    width: 60px;
-    grid-column: 2 / 3;
-}
-
-.navbar .menu {
-    grid-column: 4 / 7;
-    display: flex;
-}
-
-.navbar ul li {
-    margin-right: 3em;
-    list-style: none;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.navbar a:hover {
-    color: #fff;
-}
-
-.navbar .menu-bar {
-    display: none;
-}
-
-.navbar .shop {
-    grid-column: 8 / 9;
-    justify-content: flex-end;
-}
 
 .main-video {
     margin-top: 250px;
@@ -163,35 +117,23 @@ h3{
 }
 
 @media (max-width: 600px){
-    .menu {
-        display: none;
-      }
-      .show-menu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px; 
-        right: 0;
-        background-color: #d41434;
-        padding: 20px;
-        width: 100%;
-      }
-
-      .show-menu li {
-        margin-bottom: 10px;
-      }
-    
-      .show-menu a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.2em;
-      }
     
     .grid .item{
         height: 150px;
     }
+
+
     .grid{
         grid-template-columns: 1fr 1fr; 
     }
-    
+
+    .columns{
+        flex-direction: column; 
+        gap: 0;
+    }
+
+    .columns div{
+        width: 100%;
+        text-align: center;
+    }
 }
